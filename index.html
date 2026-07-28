@@ -1,204 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mankis LLC | Welcome</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
-
-        body{
-            background:#f4f7fa;
-            color:#333;
-        }
-
-        /* Navigation */
-        nav{
-            background:#0d6efd;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding:18px 8%;
-            box-shadow:0 2px 10px rgba(0,0,0,.15);
-        }
-
-        nav h2{
-            color:white;
-        }
-
-        nav ul{
-            list-style:none;
-            display:flex;
-        }
-
-        nav ul li{
-            margin-left:25px;
-        }
-
-        nav ul li a{
-            color:white;
-            text-decoration:none;
-            font-size:17px;
-            font-weight:bold;
-            transition:.3s;
-        }
-
-        nav ul li a:hover{
-            color:#ffd43b;
-        }
-
-
-        /* Hero Section */
-        .hero{
-            text-align:center;
-            padding:100px 20px;
-            background:linear-gradient(rgba(13,110,253,.85),rgba(13,110,253,.85)),
-            url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
-
-            background-size:cover;
-            background-position:center;
-            color:white;
-        }
-
-        .hero h1{
-            font-size:48px;
-            margin-bottom:20px;
-        }
-
-        .hero p{
-            max-width:850px;
-            margin:auto;
-            line-height:1.8;
-            font-size:18px;
-        }
-
-
-        /* Button Style */
-        .btn{
-            display:inline-block;
-            margin-top:30px;
-            padding:12px 25px;
-            background:white;
-            color:#0d6efd;
-            text-decoration:none;
-            border-radius:8px;
-            font-weight:bold;
-            transition:.3s;
-        }
-
-        .btn:hover{
-            background:#ffd43b;
-            color:#333;
-        }
-
-
-        /* Content */
-        .content{
-            width:85%;
-            margin:50px auto;
-        }
-
-        .card{
-            background:white;
-            padding:35px;
-            border-radius:12px;
-            box-shadow:0 5px 15px rgba(0,0,0,.1);
-        }
-
-        .card h2{
-            color:#0d6efd;
-            margin-bottom:20px;
-        }
-
-        .card p{
-            line-height:1.8;
-            margin-bottom:15px;
-        }
-
-
-        footer{
-            margin-top:60px;
-            background:#0d6efd;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-
-    </style>
-</head>
-
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mankis LLC | Welcome</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#f4f7fb;color:#333}
+nav{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:18px 8%;background:#0b5ed7;color:#fff;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+nav ul{display:flex;list-style:none;gap:24px}nav a{text-decoration:none;color:#fff;font-weight:600}
+.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px;color:#fff;
+background:linear-gradient(135deg,rgba(8,27,75,.88),rgba(13,110,253,.75)),url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat}
+.hero h1{font-size:3.5rem}.hero p{max-width:760px;margin:20px 0;line-height:1.8}
+.btn{background:#fff;color:#0b5ed7;padding:14px 30px;border-radius:40px;text-decoration:none;font-weight:700}
+.container{width:min(1100px,90%);margin:60px auto}
+.card{background:#fff;padding:35px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:40px}
+.service{background:#fff;padding:25px;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+footer{background:#0b5ed7;color:#fff;text-align:center;padding:22px;margin-top:60px}
+@media(max-width:768px){
+nav{flex-direction:column;gap:15px}nav ul{flex-direction:column;align-items:center}
+.hero h1{font-size:2.2rem}.hero p{font-size:.98rem}
+}
+</style></head>
 <body>
-
-    <nav>
-        <h2>Mankis LLC</h2>
-
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-
-    <section class="hero">
-
-        <h1>Welcome to Mankis LLC</h1>
-
-        <p>
-            Empowering innovation, building digital solutions, and creating
-            opportunities through technology.
-        </p>
-
-        <a href="about.html" class="btn">Learn More</a>
-
-    </section>
-
-
-
-    <section class="content">
-
-        <div class="card">
-
-            <h2>Who We Are</h2>
-
-            <p>
-                <strong>Mankis LLC</strong> is a technology-driven company dedicated
-                to delivering innovative digital solutions that help businesses and
-                individuals thrive in today's connected world.
-            </p>
-
-
-            <p>
-                Through our <strong>TechHub</strong>, we provide a collaborative
-                environment where developers, students, entrepreneurs, and
-                technology enthusiasts can learn, build, and innovate together.
-            </p>
-
-
-            <p>
-                Whether you want to develop software, create modern websites,
-                or improve your technology skills, Mankis LLC and TechHub are
-                committed to helping you achieve your goals.
-            </p>
-
-
-        </div>
-
-    </section>
-
-
-
-    <footer>
-        <p>&copy; 2026 Mankis LLC | TechHub. All Rights Reserved.</p>
-    </footer>
-
-
-</body>
-</html>
+<nav><h2>Mankis LLC</h2><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<section class="hero">
+<h1>Building the Future with Technology</h1>
+<p>Mankis LLC delivers innovative software, web solutions, and technology services that help businesses and individuals succeed in the digital world.</p>
+<a class="btn" href="about.html">Learn More</a>
+</section>
+<div class="container">
+<div class="card">
+<h2>Who We Are</h2>
+<p><strong>Mankis LLC</strong> is a technology-driven company focused on software development, modern web solutions, and digital innovation.</p>
+<p>Our <strong>TechHub</strong> empowers students, developers, and entrepreneurs with practical skills and collaborative opportunities.</p>
+<p>We are committed to quality, innovation, and helping clients achieve their goals through technology.</p>
+</div>
+<div class="services">
+<div class="service"><h3>Web Development</h3><p>Responsive, fast and modern websites.</p></div>
+<div class="service"><h3>Software Solutions</h3><p>Custom software tailored to your business.</p></div>
+<div class="service"><h3>Tech Training</h3><p>Professional learning for future innovators.</p></div>
+</div>
+</div>
+<footer>&copy; 2026 Mankis LLC | TechHub. All Rights Reserved.</footer>
+</body></html>
